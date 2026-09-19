@@ -1,21 +1,159 @@
 <!doctype html>
 <html lang="zh-Hans">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#5b0710">
 <title>Ahlok & Asu · Wedding Invitation</title>
-<meta name="theme-color" content="#8d1016">
 <style>
-:root{--red:#8d1016;--deep:#4d090c;--gold:#d9b15d;--cream:#fff8ea;--ink:#3a1b14}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f4ead8;color:var(--ink);font-family:Georgia,"Times New Roman","Noto Serif SC",serif}main{max-width:520px;margin:auto;background:var(--cream);box-shadow:0 0 40px #0002;overflow:hidden}.hero{height:100svh;min-height:650px;position:relative;background:url('photo4.jpeg') center 30%/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;text-align:center}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#00000008 20%,#3c000015 55%,#3c0000c9 100%)}.heroText{position:relative;z-index:1;color:#fff;padding:0 24px 64px;text-shadow:0 2px 12px #0008}.seal{width:70px;height:70px;margin:0 auto 18px;border:1px solid #f4d991;display:grid;place-items:center;font-size:38px;color:#f4d991;transform:rotate(45deg)}.seal span{transform:rotate(-45deg)}h1{font-weight:400;font-size:46px;margin:0;letter-spacing:2px}.amp{color:#f4d991;font-style:italic}.hero p{letter-spacing:3px;margin:12px 0 0}.scroll{position:absolute;bottom:18px;z-index:2;color:#fff;font-size:12px;letter-spacing:2px;opacity:.8}.section{padding:64px 28px;text-align:center;position:relative}.red{background:var(--red);color:#fff8e8}.orn{color:var(--gold);font-size:24px;letter-spacing:10px;margin-bottom:16px}.title{font-size:30px;font-weight:400;margin:8px 0}.cn{font-size:17px;line-height:1.9}.date{font-size:44px;color:var(--gold);margin:22px 0 4px}.small{font-size:13px;letter-spacing:2px;opacity:.8}.count{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:28px}.count div{border:1px solid #d9b15d66;padding:13px 3px}.count b{display:block;font-size:25px;color:var(--gold);font-weight:400}.count span{font-size:10px;letter-spacing:1px}.photo{width:100%;display:block}.frame{margin:0 18px;padding:8px;border:1px solid var(--gold);background:#fff}.details{border-top:1px solid #d9b15d88;border-bottom:1px solid #d9b15d88;padding:24px 0;margin:25px 0}.details h3{font-size:24px;font-weight:400;color:var(--gold);margin:0 0 10px}.details p{line-height:1.8;margin:5px 0}.btn{display:inline-block;padding:13px 24px;border:1px solid var(--gold);color:inherit;text-decoration:none;letter-spacing:1px;margin-top:14px;border-radius:999px}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:7px;padding:7px;background:#fff}.gallery img{width:100%;height:260px;object-fit:cover}.gallery img:last-child{grid-column:1/3;height:330px}.quote{font-style:italic;font-size:19px;line-height:1.8}.footer{padding:55px 25px;background:var(--deep);color:#fff;text-align:center}.footer strong{font-size:30px;color:var(--gold);font-weight:400}.petal{position:absolute;color:#d9b15d33;font-size:70px;pointer-events:none}@media(max-width:390px){h1{font-size:39px}.date{font-size:38px}.section{padding-left:22px;padding-right:22px}}
+:root{--red:#650812;--deep:#260206;--gold:#f6d47a;--gold2:#b97925;--cream:#fff2d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#180104;color:var(--cream);font-family:Georgia,"Times New Roman","Noto Serif SC",serif;overflow-x:hidden}
+body.lock{overflow:hidden}.screen{min-height:100svh;position:relative}.gold{color:var(--gold)}
+#cover{position:fixed;inset:0;z-index:50;display:grid;place-items:center;overflow:hidden;background:
+radial-gradient(circle at 50% 42%,rgba(213,111,28,.35),transparent 29%),
+linear-gradient(180deg,#7b0b16 0%,#4a050c 55%,#1f0105 100%);transition:opacity .9s,visibility .9s}
+#cover.open{opacity:0;visibility:hidden;pointer-events:none}
+.lattice{position:absolute;inset:0;opacity:.22;background-image:linear-gradient(45deg,transparent 45%,#e7b84f 46%,#e7b84f 48%,transparent 49%),linear-gradient(-45deg,transparent 45%,#e7b84f 46%,#e7b84f 48%,transparent 49%);background-size:48px 48px;mask-image:linear-gradient(90deg,#000,transparent 25%,transparent 75%,#000)}
+.vignette{position:absolute;inset:0;box-shadow:inset 0 0 120px #120003}
+.lantern{position:absolute;top:5%;width:74px;height:96px;border-radius:46%;background:radial-gradient(circle at 45% 30%,#f45d35,#a20c13 60%,#57050a);border:2px solid #d8a643;box-shadow:0 0 30px #f5a43b66;animation:sway 4s ease-in-out infinite;transform-origin:50% -25px}.lantern:before{content:"囍";position:absolute;inset:0;display:grid;place-items:center;color:#f4c55e;font-size:30px}.lantern:after{content:"";position:absolute;width:4px;height:48px;background:#c89431;left:35px;bottom:-49px}.l1{left:5%}.l2{right:5%;animation-delay:-2s}
+@keyframes sway{50%{transform:rotate(3deg)}}
+.cover-inner{position:relative;z-index:3;text-align:center;width:min(88vw,560px);padding:36px 18px}.eyebrow{letter-spacing:.35em;font-size:12px}.ring{width:245px;height:245px;margin:20px auto 8px;border:2px solid #d5a844;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 30px #e9a82b44,inset 0 0 35px #e9a82b22}.ring:after{content:"";position:absolute;inset:9px;border:1px solid #e7c76b66;border-radius:50%}.xi{font-size:128px;line-height:1;background:linear-gradient(#fff1a8,#e4a839 45%,#fff0a1 58%,#a96916);-webkit-background-clip:text;color:transparent;text-shadow:0 5px 18px #ffb52a44;filter:drop-shadow(0 0 7px #ffd56d)}
+.names{font-size:46px;font-style:italic;color:#f8d77a;margin:10px 0 2px}.tag{letter-spacing:.2em;color:#e9c467;font-size:14px}.date{font-size:20px;letter-spacing:.3em;margin:24px 0 8px}.invite{font-size:15px;letter-spacing:.12em;line-height:1.8}
+.open-btn{margin-top:22px;padding:15px 30px;border-radius:8px;border:1px solid #f1c75f;background:linear-gradient(180deg,#b92826,#7f0b13);color:#fff2c2;font:inherit;font-size:16px;letter-spacing:.12em;box-shadow:0 0 0 4px #b57a2822,0 8px 25px #0008;cursor:pointer}.open-btn:active{transform:scale(.98)}
+.scroll-note{margin-top:22px;font-size:11px;letter-spacing:.25em;color:#d9b65f}.chev{font-size:25px;animation:bob 1.6s infinite}@keyframes bob{50%{transform:translateY(7px)}}
+#fx{position:fixed;inset:0;z-index:60;pointer-events:none}
+.music{position:fixed;right:16px;bottom:18px;z-index:40;width:48px;height:48px;border-radius:50%;border:1px solid #f1cc70;background:#650812dd;color:#ffe79b;font-size:20px;box-shadow:0 4px 20px #0008;display:none}
+.music.show{display:block}
+.hero{min-height:100svh;background:linear-gradient(180deg,#0005,#310006bb),url("photo4.jpeg") center 28%/cover no-repeat;display:flex;align-items:flex-end;justify-content:center;text-align:center;padding:55px 22px}.hero-card{width:min(92%,620px);padding:26px 18px;border:1px solid #e7c26788;background:#39030ab8;backdrop-filter:blur(4px);box-shadow:0 18px 55px #0009}.hero h1{margin:0;font-size:40px;color:#f7d578}.hero p{line-height:1.8}
+section.content{background:linear-gradient(#fff8e9,#f4e5c7);color:#52210f;padding:72px 18px;text-align:center}.orn{color:#a81d1d;font-size:26px}.content h2{font-size:30px;margin:8px 0;color:#8d1117}.sub{letter-spacing:.2em;color:#9c6d35;font-size:12px}.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;max-width:620px;margin:30px auto}.unit{padding:18px 5px;background:#fffaf0;border:1px solid #c79a4b;box-shadow:0 6px 18px #8e55251a}.num{font-size:28px;color:#99161b}.label{font-size:10px;letter-spacing:.15em;margin-top:6px}
+.gallery{max-width:760px;margin:45px auto 0;display:grid;gap:16px}.gallery img{width:100%;display:block;border:6px solid #fff9ec;box-shadow:0 10px 30px #6b351e33}.gallery img:nth-child(2),.gallery img:nth-child(4){aspect-ratio:16/10;object-fit:cover}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s ease}.reveal.on{opacity:1;transform:none}
+.details{background:radial-gradient(circle at 50% 0,#8f141c,#4b050b 52%,#220105);padding:72px 20px;text-align:center}.card{max-width:650px;margin:auto;border:1px solid #d8aa4f;padding:34px 20px;background:#43050bbb;box-shadow:0 0 0 7px #8d541b22}.card h2{color:#f7d77b;font-size:30px}.info{font-size:18px;line-height:1.9}.map{display:inline-block;margin-top:18px;padding:13px 22px;border:1px solid #e5bf63;color:#ffe7a0;text-decoration:none;background:#7c0c14}.closing{padding:75px 20px;text-align:center;background:#170103}.closing .xi-small{font-size:70px;color:#e5b74d}.closing h2{color:#f2d17a;font-weight:normal}.closing p{color:#d7b982}
+@media(max-width:520px){.lantern{width:52px;height:70px}.lantern:after{left:24px}.xi{font-size:108px}.ring{width:210px;height:210px}.names{font-size:39px}.countdown{gap:5px}.num{font-size:23px}}
 </style>
-</head><body><main>
-<section class="hero"><div class="heroText"><div class="seal"><span>囍</span></div><div class="small">THE WEDDING OF</div><h1>Ahlok <span class="amp">&</span> Asu</h1><p>11 · 10 · 2026</p></div><div class="scroll">SCROLL ↓</div></section>
-<section class="section red"><div class="orn">❦ 囍 ❦</div><div class="small">诚 挚 邀 请</div><h2 class="title">我们结婚了</h2><p class="cn">良辰已定，佳期将至。<br>诚邀您与我们一同见证<br>这份幸福与喜悦。</p><div class="date">11.10.2026</div><div class="small">SUNDAY · 1:00 PM — 3:00 PM</div><div class="count"><div><b id="d">--</b><span>DAYS</span></div><div><b id="h">--</b><span>HOURS</span></div><div><b id="m">--</b><span>MIN</span></div><div><b id="s">--</b><span>SEC</span></div></div></section>
-<section class="section"><div class="orn">❦</div><h2 class="title">Ahlok & Asu</h2><p class="quote">“从今以后，岁岁年年，<br>与你共赴每一个朝暮。”</p></section>
-<div class="frame"><img class="photo" src="photo5.jpeg" alt="Ahlok and Asu"></div>
-<section class="section red"><div class="small">WEDDING RECEPTION</div><h2 class="title">婚宴</h2><div class="details"><h3>Gedung Paragon</h3><p>2026年10月11日 · 星期日<br>下午 1:00 — 3:00</p><p>Jalan Tani Gg Cisadane, Singkawang<br>(Depan Singkawang Grand Mall)</p></div><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gedung+Paragon+Jalan+Tani+Gg+Cisadane+Singkawang">打开 Google Maps</a></section>
-<section class="section"><div class="orn">囍</div><h2 class="title">我们的故事</h2><p class="cn">在茫茫人海里相遇，<br>从相识、相知，到决定携手一生。<br>这一天，希望有您的见证。</p></section>
-<div class="gallery"><img src="photo1.jpeg" alt="Wedding photo"><img src="photo3.jpeg" alt="Wedding photo"><img src="photo2.jpeg" alt="Wedding photo"></div>
-<section class="footer"><div class="small">SAVE THE DATE</div><strong>Ahlok & Asu</strong><p>11 · 10 · 2026</p><p style="font-size:13px;opacity:.75;line-height:1.8">期待与您相见<br>敬备喜宴 · 恭候光临</p></section>
-</main><script>
-const target=new Date('2026-10-11T13:00:00+07:00');function tick(){let x=Math.max(0,target-new Date()),d=Math.floor(x/864e5);x%=864e5;let h=Math.floor(x/36e5);x%=36e5;let m=Math.floor(x/6e4),s=Math.floor(x%6e4/1000);document.querySelector('#d').textContent=d;document.querySelector('#h').textContent=String(h).padStart(2,'0');document.querySelector('#m').textContent=String(m).padStart(2,'0');document.querySelector('#s').textContent=String(s).padStart(2,'0')}tick();setInterval(tick,1000);
-</script></body></html>
+</head>
+<body class="lock">
+<canvas id="fx"></canvas>
+<div id="cover">
+  <div class="lattice"></div><div class="vignette"></div>
+  <div class="lantern l1"></div><div class="lantern l2"></div>
+  <div class="cover-inner">
+    <div class="eyebrow gold">THE WEDDING OF</div>
+    <div class="ring"><div class="xi">囍</div></div>
+    <div class="names">Ahlok &amp; Asu</div>
+    <div class="tag">良缘永结 · 佳偶天成</div>
+    <div class="date gold">11 · 10 · 2026</div>
+    <div class="invite">诚邀您一同见证我们的幸福时刻<br><span class="gold">YOU ARE INVITED</span></div>
+    <button class="open-btn" id="open">♥ 开启我们的喜帖<br><small>OPEN OUR INVITATION</small></button>
+    <div class="scroll-note">两颗真心 · 一生相伴<div class="chev">⌄</div></div>
+  </div>
+</div>
+
+<button class="music" id="music" aria-label="音乐">♫</button>
+<div id="player" style="position:fixed;width:1px;height:1px;left:-9999px;top:-9999px"></div>
+
+<main>
+<section class="hero screen">
+  <div class="hero-card reveal">
+    <div class="orn">囍</div>
+    <h1>Ahlok &amp; Asu</h1>
+    <p>从今以后，四季三餐，一生相伴。<br>诚挚邀请您，与我们共同见证这一刻。</p>
+    <div class="gold">11 OCTOBER 2026 · SINGKAWANG</div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="reveal"><div class="orn">❦</div><div class="sub">SAVE THE DATE</div><h2>距离我们的婚礼</h2></div>
+  <div class="countdown reveal">
+    <div class="unit"><div class="num" id="d">--</div><div class="label">天 DAYS</div></div>
+    <div class="unit"><div class="num" id="h">--</div><div class="label">时 HOURS</div></div>
+    <div class="unit"><div class="num" id="m">--</div><div class="label">分 MINS</div></div>
+    <div class="unit"><div class="num" id="s">--</div><div class="label">秒 SECS</div></div>
+  </div>
+  <div class="gallery">
+    <img class="reveal" src="photo1.jpeg" alt="Ahlok and Asu">
+    <img class="reveal" src="photo2.jpeg" alt="Ahlok and Asu">
+    <img class="reveal" src="photo3.jpeg" alt="Ahlok and Asu">
+    <img class="reveal" src="photo5.jpeg" alt="Ahlok and Asu">
+  </div>
+</section>
+
+<section class="details">
+  <div class="card reveal">
+    <div class="orn gold">囍</div>
+    <div class="sub gold">WEDDING RECEPTION</div>
+    <h2>婚宴 · Gedung Paragon</h2>
+    <div class="info">
+      2026年10月11日 · 星期日<br>
+      13:00 — 15:00<br><br>
+      Jalan Tani Gg Cisadane, Singkawang<br>
+      (Depan Singkawang Grand Mall)
+    </div>
+    <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Gedung+Paragon+Jalan+Tani+Gg+Cisadane+Singkawang">开启地图导航</a>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="reveal">
+    <div class="xi-small">囍</div>
+    <h2>期待与您相见</h2>
+    <p>执子之手 · 与子偕老</p>
+    <p>Ahlok &amp; Asu · 11.10.2026</p>
+  </div>
+</section>
+</main>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+let player, ready=false, playing=false;
+function onYouTubeIframeAPIReady(){
+  player=new YT.Player('player',{height:'1',width:'1',videoId:'AeSW8rBzbRo',
+    playerVars:{playsinline:1,controls:0,rel:0,loop:1,playlist:'AeSW8rBzbRo'},
+    events:{onReady:()=>ready=true}});
+}
+const cover=document.getElementById('cover'), music=document.getElementById('music');
+document.getElementById('open').addEventListener('click',()=>{
+  burst();
+  if(ready){player.playVideo();playing=true;music.textContent='♫'}
+  setTimeout(()=>{cover.classList.add('open');document.body.classList.remove('lock');music.classList.add('show')},450);
+});
+music.addEventListener('click',()=>{
+  if(!ready)return;
+  if(playing){player.pauseVideo();playing=false;music.textContent='♪'}else{player.playVideo();playing=true;music.textContent='♫'}
+});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('on')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>io.observe(x));
+const target=new Date('2026-10-11T13:00:00+07:00').getTime();
+function tick(){
+ let x=Math.max(0,target-Date.now()),dd=Math.floor(x/86400000);x%=86400000;
+ let hh=Math.floor(x/3600000);x%=3600000;let mm=Math.floor(x/60000);let ss=Math.floor(x%60000/1000);
+ d.textContent=dd;h.textContent=String(hh).padStart(2,'0');m.textContent=String(mm).padStart(2,'0');s.textContent=String(ss).padStart(2,'0');
+} tick();setInterval(tick,1000);
+
+// Canvas: soft gold dust + petals
+const c=document.getElementById('fx'),ctx=c.getContext('2d');let W,H,parts=[];
+function resize(){W=c.width=innerWidth*devicePixelRatio;H=c.height=innerHeight*devicePixelRatio;ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0)}
+addEventListener('resize',resize);resize();
+function make(type,bursting=false){
+ return {type,x:bursting?innerWidth/2:Math.random()*innerWidth,y:bursting?innerHeight*.45:-30-Math.random()*innerHeight,
+ vx:bursting?(Math.random()-.5)*9:(Math.random()-.5)*.45,vy:bursting?(Math.random()-.5)*8:0.45+Math.random()*1.05,
+ r:type==='petal'?5+Math.random()*7:0.7+Math.random()*1.8,a:.35+Math.random()*.65,rot:Math.random()*6,vr:(Math.random()-.5)*.05,life:bursting?80+Math.random()*70:9999}
+}
+for(let i=0;i<45;i++)parts.push(make(i%5===0?'petal':'gold'));
+function burst(){for(let i=0;i<95;i++)parts.push(make(i%6===0?'petal':'gold',true))}
+function draw(){
+ ctx.clearRect(0,0,innerWidth,innerHeight);
+ if(Math.random()<.18)parts.push(make(Math.random()<.16?'petal':'gold'));
+ parts.forEach(p=>{
+   p.x+=p.vx+Math.sin(p.y*.012)*.18;p.y+=p.vy;p.rot+=p.vr;p.life--;
+   ctx.save();ctx.globalAlpha=p.a;
+   if(p.type==='gold'){ctx.shadowBlur=8;ctx.shadowColor='#ffd56a';ctx.fillStyle='#ffd36a';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,7);ctx.fill()}
+   else{ctx.translate(p.x,p.y);ctx.rotate(p.rot);ctx.fillStyle='#f5a0a2';ctx.beginPath();ctx.ellipse(0,0,p.r,p.r*.48,0,0,7);ctx.fill()}
+   ctx.restore();
+ });
+ parts=parts.filter(p=>p.y<innerHeight+40&&p.x>-60&&p.x<innerWidth+60&&p.life>0);
+ requestAnimationFrame(draw)
+}draw();
+</script>
+</body>
+</html>
